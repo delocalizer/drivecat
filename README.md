@@ -16,14 +16,15 @@ As a document manager / auditor / security professional I want to understand the
 
 ## Features
 
-- Collect one root folder and all reachable descendant folders/files by recursively listing direct children with `gws`
+- Collect one root folder and all reachable descendant folders/files
 - Persist collected data locally in SQLite
-- Write tree, TSV, or NDJSON output from that stored data without talking to Google Drive
-- Record per-folder collection failures instead of aborting the whole run
+- Write tree, TSV, or NDJSON output from the persisted data without talking to Google Drive
+
+### Runtime validation & error handling
 - Validate the installed `gws` version before collecting
 - Detect when `gws` pagination stops at the configured page limit instead of silently truncating a folder listing
+- Record per-folder collection failures instead of aborting the whole run
 - Retry transient Drive and transport failures with backoff
-- Keep collection state in a disk-backed SQLite store instead of retaining the full crawl state only in memory
 
 ## Requirements
 
