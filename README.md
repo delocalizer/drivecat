@@ -3,7 +3,16 @@
 `drivecat` is a minimal command-line tool that does two things:
 
 1. collects structure and metadata of a Google Drive folder contents into a local SQLite database
-2. writes that collected data to stdout in one of several output formats
+2. outputs the folder structure and metadata in one of several formats
+
+## Motivation
+As a document manager / auditor / security professional I want to understand the structure and permissions of Google Drive (“GDrive”) locations under my care. For example, I want to know:
+* Who owns certain documents
+* Which documents are open to the world
+* Which documents are / are not visible by a user or group
+* How many documents live in a folder and its subfolders
+* What redundancies exist in permissions — e.g. do some users have access to a document both as an individual, and as a member of a group
+
 
 ## Features
 
