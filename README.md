@@ -2,7 +2,7 @@
 
 `drivecat` is a minimal command-line tool that does two things:
 
-1. collects a Google Drive folder tree into a local SQLite database
+1. collects structure and metadata of a Google Drive folder contents into a local SQLite database
 2. writes that collected data to stdout in one of several output formats
 
 ## Features
